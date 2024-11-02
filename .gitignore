@@ -18,3 +18,9 @@ coverage/*
 
 # Build directory
 /dist
+
+#.json
+package-lock.json
+
+#vscode settings
+.vscode

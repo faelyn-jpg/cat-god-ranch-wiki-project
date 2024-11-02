@@ -4,7 +4,7 @@ function Layout() {
   return (
     <>
       <header className="title">
-        <h1>Wiki!</h1>
+        <h1>Cat God Ranch Wiki</h1>
       </header>
       <main className="main">
         <Outlet />
