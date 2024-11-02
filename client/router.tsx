@@ -4,18 +4,21 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom'
-import App from './components/App'
-
+import CatGod from './components/CatGod'
+import Animal from './components/Animal'
+import Item from './components/Item'
+import Ranch from './components/Ranch'
 import Home from './components/Home'
 import Layout from './components/Layout'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      createRoutesFromElements([
-      <Route path="/" element={<App />} />
-      ])
       <Route index element={<Home />} />
+      <Route path="/gods/:catgod" element={<CatGod />} />
+      <Route path="/animals/:animal" element={<Animal />} />
+      <Route path="/items/:item" element={<Item />} />
+      <Route path="/ranches/:ranch" element={<Ranch />} />
     </Route>,
   ),
 )

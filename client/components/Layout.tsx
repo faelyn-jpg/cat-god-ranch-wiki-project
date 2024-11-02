@@ -3,12 +3,12 @@ import { Outlet } from 'react-router-dom'
 function Layout() {
   return (
     <>
-      <div className="title">
+      <header className="title">
         <h1>Wiki!</h1>
-      </div>
-      <div className="main">
+      </header>
+      <main className="main">
         <Outlet />
-      </div>
+      </main>
       <footer>faelyn-jpg</footer>
     </>
   )
