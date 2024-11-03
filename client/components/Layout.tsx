@@ -7,8 +7,10 @@ function Layout() {
       <div className="container">
         <div className="header-wrapper">
           <header>
-            <div className="header-image">Header image goes here</div>
-            <div className="header-name">Cat God Ranch Wiki</div>
+            <div className="header-image">
+              <img src="../../public/images/cat-god-ranch-logo.png" alt="" />
+            </div>
+            <h2 className="header-name text-shadow">Cat God Ranch Wiki</h2>
             <nav>
               <ul className="header-nav">
                 <li>One</li>
@@ -24,7 +26,11 @@ function Layout() {
           </div>
         </main>
       </div>
-      <footer>faelyn-jpg</footer>
+      <footer>
+        Cat God Ranch is owned by Crazy Potato Game Studio
+        <br /> Cat God Ranch wiki is not associated with Cat God Ranch or Crazy
+        Potato Game Studio.
+      </footer>
     </>
   )
 }

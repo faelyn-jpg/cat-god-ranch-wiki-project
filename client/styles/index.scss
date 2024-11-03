@@ -15,6 +15,7 @@ body {
   font-size: 1rem;
   margin: 0;
   background-image: url(../../public/images/title-background-with-blur.png);
+  z-index: -30;
   background-repeat: no-repeat;
   background-size: contain;
   background-attachment: fixed;
@@ -24,6 +25,7 @@ body {
 
 .header-wrapper {
   display: flex;
+  z-index: 5;
   flex-direction: column;
   height: 148px;
   justify-content: flex-end;
@@ -32,6 +34,7 @@ body {
 .header-image {
   grid-row: 1 / 3;
   margin-right: 18px;
+  margin: 0 35px;
 }
 .header-image > img {
   display: block;
@@ -63,7 +66,19 @@ nav .header-nav {
 .header-name {
   display: flex;
   align-items: flex-end;
-  font-size: 24px;
+  font-size: 35px;
+  margin: 0;
+
+}
+.text-shadow {
+  -webkit-text-stroke: 0.5px white;
+  color: black;
+  text-shadow:
+      3px 3px 0 #FFF,
+    -1px -1px 0 #FFF,  
+     1px -1px 0 #FFF,
+     -1px 1px 0 #FFF,
+      1px 1px 0 #FFF;
 }
 
 ul {
@@ -90,8 +105,17 @@ header {
 .main {
   box-sizing: border-box;
   display: flex;
-  border: 100px solid transparent;
+  border-style: solid;
+  border-width: 50px;
+  padding: 8px 12px;
+  z-index: 0;
   background-color: $--box-background;
-  border-image: url(../../public/images/border.png) 33% round;
-  border-radius: 10px;
+  border-image: url(../../public/images/border-mini2.png) 33% round;
+  box-shadow: 0 0 200px rgba(white, 0.8);
+  border-radius: 20px;
+}
+
+.page-heading {
+  text-align: center;
+  font-size: 40px;
 }

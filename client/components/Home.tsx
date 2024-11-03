@@ -1,7 +1,7 @@
 function Home() {
   return (
     <>
-      <h1>Home goes here!</h1>
+      <h1 className="page-heading">Home goes here!</h1>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. In et
         vestibulum augue. Donec pharetra sagittis lorem at cursus. Donec justo
