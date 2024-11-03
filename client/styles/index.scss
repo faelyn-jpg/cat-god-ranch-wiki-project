@@ -14,7 +14,7 @@ body {
   font-family: 'Source Sans 3','Montserrat', sans-serif;
   font-size: 1rem;
   margin: 0;
-  background-image: url(../../public/images/title-background-with-blur.png);
+  background-image: url(../../images/title-background-with-blur.png);
   z-index: -30;
   background-repeat: no-repeat;
   background-size: contain;
@@ -110,7 +110,7 @@ header {
   padding: 8px 12px;
   z-index: 0;
   background-color: $--box-background;
-  border-image: url(../../public/images/border-mini2.png) 33% round;
+  border-image: url(../../images/border-mini2.png) 33% round;
   box-shadow: 0 0 200px rgba(white, 0.8);
   border-radius: 20px;
 }
