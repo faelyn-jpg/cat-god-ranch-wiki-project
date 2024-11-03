@@ -3,12 +3,27 @@ import { Outlet } from 'react-router-dom'
 function Layout() {
   return (
     <>
-      <header className="title">
-        <h1>Cat God Ranch Wiki</h1>
-      </header>
-      <main className="main">
-        <Outlet />
-      </main>
+      <div className="background"></div>
+      <div className="container">
+        <div className="header-wrapper">
+          <header>
+            <div className="header-image">Header image goes here</div>
+            <div className="header-name">Cat God Ranch Wiki</div>
+            <nav>
+              <ul className="header-nav">
+                <li>One</li>
+                <li>Two</li>
+                <li>Three</li>
+              </ul>
+            </nav>
+          </header>
+        </div>
+        <main className="main">
+          <div>
+            <Outlet />
+          </div>
+        </main>
+      </div>
       <footer>faelyn-jpg</footer>
     </>
   )
