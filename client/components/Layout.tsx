@@ -8,7 +8,7 @@ function Layout() {
           <div className="header-wrapper">
             <header>
               <div className="header-image">
-                <img src="../../public/images/cat-god-ranch-logo.png" alt="" />
+                <img src="../../images/cat-god-ranch-logo.png" alt="" />
               </div>
               <h2 className="header-name text-shadow">Cat God Ranch Wiki</h2>
               <nav>
