@@ -14,12 +14,22 @@ body {
   font-family: 'Source Sans 3','Montserrat', sans-serif;
   font-size: 1rem;
   margin: 0;
+  // background-image: url(../../images/title-background-with-blur.png);
+  // background-repeat: no-repeat;
+  // background-size: contain;
+  // background-attachment: fixed;
+  // display: block;
+  background-color: $--theme-background;
+}
+
+.background { 
   background-image: url(../../images/title-background-with-blur.png);
   z-index: -30;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
-  display: block;
+  background-position: center;
+
   background-color: $--theme-background;
 }
 
