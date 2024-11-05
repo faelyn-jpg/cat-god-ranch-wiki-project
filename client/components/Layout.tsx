@@ -1,4 +1,5 @@
 import { Outlet } from 'react-router-dom'
+import dropdown from '../../public/assets/sprites.svg'
 
 function Layout() {
   return (
@@ -13,9 +14,24 @@ function Layout() {
               <h2 className="header-name text-shadow">Cat God Ranch Wiki</h2>
               <nav>
                 <ul className="header-nav">
-                  <li>One</li>
-                  <li>Two</li>
-                  <li>Three</li>
+                  <li>
+                    One
+                    <svg className="dropdown dropdown-toggle">
+                      <use xlinkHref={`${dropdown}#dropdown`} />
+                    </svg>
+                  </li>
+                  <li>
+                    Two
+                    <svg className="dropdown">
+                      <use xlinkHref={`${dropdown}#dropdown`} />
+                    </svg>
+                  </li>{' '}
+                  <li>
+                    Three
+                    <svg className="dropdown">
+                      <use xlinkHref={`${dropdown}#dropdown`} />
+                    </svg>
+                  </li>
                 </ul>
               </nav>
             </header>

@@ -120,12 +120,29 @@ header {
   padding: 8px 12px;
   z-index: 0;
   background-color: $--box-background;
-  border-image: url(../../images/border-mini2.png) 33% round;
+  border-image: url(../../images/mini-border.png) 36% round;
   box-shadow: 0 0 200px rgba(white, 0.8);
-  border-radius: 20px;
+  border-radius: 25px;
 }
 
 .page-heading {
   text-align: center;
   font-size: 40px;
 }
+
+.dropdown {
+  height: 12px;
+  width: 12px;
+  min-width: 12px;
+  margin-left: 5px;
+  transition: transform 330ms ease-in-out;
+
+}
+
+.dropdown-toggle:hover{
+  -ms-transform: rotate(180deg); /* IE 9 */
+  -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+  transform: rotate(180deg);
+  transition: transform 330ms ease-in-out;
+}
+
