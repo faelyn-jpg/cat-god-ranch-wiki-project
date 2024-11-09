@@ -4,12 +4,12 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom'
-import CatGod from './components/CatGod'
-import Animal from './components/Animal'
-import Item from './components/Item'
-import Ranch from './components/Ranch'
-import Home from './components/Home'
-import Layout from './components/Layout'
+import CatGod from './pages/CatGod'
+import Animal from './pages/Animal'
+import Item from './pages/Item'
+import Ranch from './pages/Ranch'
+import Home from './pages/Home'
+import Layout from './pages/Layout'
 
 const router = createBrowserRouter(
   createRoutesFromElements(

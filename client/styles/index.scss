@@ -139,10 +139,17 @@ header {
 
 }
 
-.dropdown-toggle:hover{
+.hover:hover {
+  &:has(.dropdown-toggle) {
+    .dropdown-toggle{
   -ms-transform: rotate(180deg); /* IE 9 */
   -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
   transform: rotate(180deg);
   transition: transform 330ms ease-in-out;
 }
+  }
+  
+}
+
+
 
