@@ -1,6 +1,6 @@
 import dropdown from '../../assets/sprites.svg?url'
 
-function Header() {
+export default function Header() {
   return (
     <div className="header-wrapper">
       <header>
@@ -9,7 +9,7 @@ function Header() {
         </div>
         <h2 className="header-name text-shadow">Cat God Ranch Wiki</h2>
         <nav>
-          <ul className="header-nav">
+          <ul className="header-nav mobile-screen">
             <li className="hover">
               One
               <svg className="dropdown dropdown-toggle">
@@ -34,5 +34,3 @@ function Header() {
     </div>
   )
 }
-
-export default Header
