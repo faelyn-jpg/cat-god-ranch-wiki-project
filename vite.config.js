@@ -9,4 +9,12 @@ export default defineConfig({
       '/api': 'http://localhost:3000',
     },
   },
+  define: {
+    global: 'window',
+  },
+  build: {
+    rollupOptions: {
+      external: ['graphql'],
+    },
+  },
 })
