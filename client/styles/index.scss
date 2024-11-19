@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 $--navigation-width: 66px;
 $--theme-background: #C1D172;
@@ -9,10 +10,34 @@ $--box-background: #FFEBD6;
   box-sizing: inherit;
 }
 
-//While there is little content on the page !! 
-main {
-  height: 100vh;
+@media print {
+	body {
+		margin: 0 !important;
+	}
 }
+
+.main-container {
+	font-family: 'Lato';
+	width: fit-content;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.ck-content {
+	font-family: 'Lato';
+	line-height: 1.6;
+	word-break: break-word;
+}
+
+.editor-container_inline-editor .editor-container__editor {
+	min-width: 795px;
+	max-width: 795px;
+}
+
+//While there is little content on the page !! 
+// main {
+//   height: 100vh;
+// }
 
 html, 
 body {
