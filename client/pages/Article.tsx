@@ -27,7 +27,7 @@ function Article() {
                 <CKEditor
                   editor={InlineEditor}
                   config={editorConfig}
-                  disabled={true}
+                  // disabled={true}
                 />
               )}
             </div>
