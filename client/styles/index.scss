@@ -30,7 +30,6 @@ $--box-background: #FFEBD6;
 }
 
 .editor-container_inline-editor .editor-container__editor {
-	min-width: 795px;
 	max-width: 795px;
 }
 
@@ -288,8 +287,4 @@ img {
 
   }
 
-}
-
-.editor-container_inline-editor .editor-container__editor {
-  min-width: 0;
 }
