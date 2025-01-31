@@ -151,6 +151,14 @@ const editorConfig = {
     Undo,
   ],
   fontFamily: {
+    options: [
+      'Source Sans 3',
+      'Montserrat',
+      'default',
+      'Arial',
+      'Courier New',
+      'Lato',
+    ],
     supportAllValues: true,
   },
   fontSize: {

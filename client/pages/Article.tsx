@@ -2,16 +2,17 @@ import { CKEditor } from '@ckeditor/ckeditor5-react'
 import { useEffect, useRef, useState } from 'react'
 import editorConfig from '../editor/EditorConfig'
 import { InlineEditor } from 'ckeditor5'
-import { useArticle, useArticles } from '../hooks/useArticles'
+import { useTextContent, useAllTextContent } from '../hooks/useTextContent'
 
 function Article() {
-  const { isPending, isError, data: article } = useArticle(8)
+  const { isPending, isError, data: articleText } = useTextContent(9)
   const editorContainerRef = useRef(null)
   const editorRef = useRef(null)
   const [isLayoutReady, setIsLayoutReady] = useState(false)
   const [editorData, setEditorData] = useState('')
   const [isReady, setIsReady] = useState(false)
-  const articles = useArticles()
+  const textContent = useAllTextContent()
+
   useEffect(() => {
     if (!isPending) {
       setIsReady(true)
@@ -25,14 +26,14 @@ function Article() {
   }, [])
 
   const handleSave = async (text: string) => {
-    await articles.add.mutate({ text })
+    await textContent.add.mutate({ text })
   }
 
   if (isPending) {
     return <p>Loading....</p>
   }
   if (isError) {
-    return <p>No article!</p>
+    return <p>Couldn&apos;t load article</p>
   }
 
   return (
@@ -49,7 +50,7 @@ function Article() {
                   editor={InlineEditor}
                   config={editorConfig}
                   // disabled={true}
-                  data={article.text}
+                  data={articleText.text}
                   onChange={(event, editor) => {
                     const data = editor.getData()
                     setEditorData(data)

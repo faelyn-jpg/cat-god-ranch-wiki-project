@@ -1,17 +1,18 @@
-import { TextData } from '../../../models/articles.ts'
+import { TextData } from '../../../models/textContent.ts'
 import db from '../connection.ts'
 
-export async function getAllArticles() {
+//unnecessary ?
+export async function getAllTextContent() {
   const articles = await db('text_content').select()
   return articles
 }
 
-export async function getArticle(id: number | string) {
+export async function getTextContent(id: number | string) {
   const article = await db('text_content').where({ id }).first()
   return article
 }
 
-export async function createArticle(text: TextData) {
+export async function createTextContent(text: TextData) {
   const result = db('text_content')
     .insert(text)
     .returning('id')
